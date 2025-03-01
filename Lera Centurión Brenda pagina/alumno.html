@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device_width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="archivo.css">
+		<title>alumno.html</title>
+    </head>  
+    <body>
+        <header id="Inicio">
+            <h1>Robótica Educativa para Niños y Adolescentes</h1>
+            <br>
+            <nav>
+                <div class="Container" id="Menú">
+                    <div><button><a href="index.html" id="InicioPag">Inicio</a></button></div>
+                    <div><button><a href="alumno.html" id="alumno">Alumno</a></button></div>
+                    <div><button><a href="docente.html" id="docente">Docente</a></button></div>
+                </div>
+            </nav>
+            <br>
+            <h2 id="welcome"></h2>
+        </header>
+        <button id="botón">Modo oscuro</button>
+        <main>
+            <section>
+                <article id="clases">
+                    <div class="tclases">
+                        <h3 id="titleClases">Horarios De Clases 2023</h3>
+                        <div class="targeta">
+                            <h4>Lunes</h4>
+                            <p>MATERIA: Matématica</p>
+                            <P>HORARIO: 08:00 a 10:00</P>
+                            <P>AULA: 015</p>
+                            <p>PROFESOR/A: Lara Rodriguez</p>
+                            <p>COMISIÓN: 07</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Lunes</h4>
+                            <p>MATERIA: Mécanica</p>
+                            <P>HORARIO: 11:00 a 12:00</P>
+                            <P>AULA: 024</p>
+                            <p>PROFESOR/A: Miguel Garcia</p>
+                            <p>COMISIÓN: 02</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Martes</h4>
+                            <p>MATERIA: Mécanica</p>
+                            <P>HORARIO: 08:00 a 11:00</P>
+                            <P>AULA: 024</p>
+                            <p>PROFESOR/A: Miguel Garcia</p>
+                            <p>COMISIÓN: 02</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Martes</h4>
+                            <p>MATERIA: Ingeniería</p>
+                            <P>HORARIO: 14:00 a 16:00</P>
+                            <P>AULA: 078</p>
+                            <p>PROFESOR/A: Luciano Rojas</p>
+                            <p>COMISIÓN: 11</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Miércoles</h4>
+                            <p>MATERIA: Matématica</p>
+                            <P>HORARIO: 08:00 a 12:00</P>
+                            <P>AULA: 015</p>
+                            <p>PROFESOR/A: Lara Rodriguez</p>
+                            <p>COMISIÓN: 07</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Jueves</h4>
+                            <p>MATERIA: Ingeniería</p>
+                            <P>HORARIO: 14:00 a 16:00</P>
+                            <P>AULA: 078</p>
+                            <p>PROFESOR/A: Luciano Rojas</p>
+                            <p>COMISIÓN: 11</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                        <div class="targeta">
+                            <h4>Viernes</h4>
+                            <p>MATERIA: Programación</p>
+                            <P>HORARIO: 08:00 a 12:00</P>
+                            <P>AULA: 066</p>
+                            <p>PROFESOR/A: Luciano Gonzales</p>
+                            <p>COMISIÓN: 02</p>
+                            <button id="cancelar">Dar debaja</button>
+                        </div>
+                    </div>
+                </article>
+                <br><br>
+                <article>
+                    <h3>Inscripción a Charlas informativas:</h3>
+                    <br>
+                    <form id="inscripción">
+                        <div id="Datos personales" class="Formulario1" >
+                            <label for="nombre">Nombre:</label>
+						    <input id="Nombre" type="text" name="nombre" >
+                            <br>
+                            <span id="mensaje" required></span>
+                            <br><br>
+                            <label for="apellido">Apellido:</label>
+                            <input id="apellido" type="text" name="apellido" required>
+                            <br><br>
+                            <label id="Dni">Documento:</label>
+                            <input id="dni" type="text" name="dni" maxlength="8" required>
+                            <br><br>
+                            <label for="email">Email:</label>
+                            <input id="email" type="text" name="email" required>
+                            <br><br>
+                            <p>¿Participaste alguna vez en nuestras charlas?</p>
+                            <input id="rb1" type="radio" name="opción">
+                            <label for="rb1">Si</label>
+                            <br>
+                            <input id="rb2" type="radio" name="opción">
+                            <label for="rb2">No</label>
+                            <br><br>
+                            <p>Charlas Disponibles:</p>
+                            <label for="temas-choice">Temas:</label>
+                            <input list="temas" id="temas-choice" name="temas-choice" required/>
+                            <datalist id="temas">
+                                <option value="Las Nuevas Tecnólogias"></option>
+                                <option value="Inteligencia Artificial"></option>
+                                <option value="Juegos Educativos"></option>
+                                <option value="Robótica y Sociedad"></option>
+                                <option value="Pensamiento Computacional"></option>
+                            </datalist>
+                        </div>
+                        <br>
+                        <div id="Reservación" class="Formulario2">
+                            <p>Agenda la fecha y hora.</p>
+                            <label form="fecha">Fecha:</label>
+                            <input type="date" id="fecha" name="fecha" value="2023-11-13" max="2023-12-22" required>
+                            <br><br>
+                            <label for="horario-choice">Horario:</label>
+                            <input list="horario" id="horario-choice" name="horario-choice" required/>
+                            <datalist id="horario">
+                                <option value="10:00am"></option>
+                                <option value="11:00am"></option>
+                                <option value="14:00pm"></option>
+                                <option value="15.30pm"></option>
+                            </datalist>
+                            <br><br>
+                            <label form="consulta">Dudas:</label>
+                            <br><br>
+                            <textarea id="consulta" name="consulta" rows="15" cols="50">Escribir...</textarea>
+                        </div>
+                        <br>
+                        <input type="submit" value="Reservar cupo">
+                    </form>
+                </article>
+            </section>
+        </main>
+        <br>
+        <aside>
+            <img id="imgAside" src="aside.jpg" alt="logo" title="logo" height="200px"></img>
+            <h4>¡INSCRIBETE A NUESTROS TALLERES!</h4>
+            <p>
+                <span>Podes encontrarnos en la dirección:</span> Av. Vergara 1873
+            </p>
+            <p>
+                <span>Nuestros contacto:</span>
+                <details>
+                    <summary>Télefono</summary>
+                      11 3429-7865
+                </details>
+            </p>
+            <p>
+                <span>Nuestra disponibilidad:</span> Lunes a Viernes de 7am a 19pm.
+            </p>
+        </aside>
+        <br>
+        <footer>
+            <p>© 2023 Brenda Lera</p>
+            <p>
+                <a href="brendalera17@gmail.com">
+                    <img src="logo email.png" alt="Email" title="Email" height="40px"></img> 
+                </a>Email
+                <br>
+                <a href="tel:1134295324">
+                    <img src="logo telefono.png" alt="Telefono" title="Telefono" height="40px"></img> 
+                </a>Teléfono
+            </p>
+        </footer>
+    </body>
+    <head>
+        <script src="code.js"></script>
+        <script>
+            var urlParams = new URLSearchParams(window.location.search);
+            var username = urlParams.get('usuario');
+        
+            document.addEventListener('DOMContentLoaded', function() {
+                if (username) {
+                    document.getElementById('welcome').textContent = '¡Bienvenido/a, ' + username + '!';
+                } else {
+                    document.getElementById('welcome').textContent = 'Usuario Inválido';
+                }
+            });
+        </script>
+        <script>
+            let input = document.getElementById("Nombre");
+            let span = document.getElementById("mensaje");
+
+            input.addEventListener("input", function(e){
+                let name = e.target.value
+                span.innerHTML = 'Hola ' + name + ', Bienvenido/a!!'
+            });
+        </script>
+        <script>
+            document.getElementById("inscripción").addEventListener("submit", function(event) {
+                
+                var requerid = document.getElementById('dni').value;
+                
+                if(requerid > 15000000){
+                    alert("Turno reservado con exito");
+                }else{
+                    event.preventDefault();
+                    alert("Revise los datos");
+                }
+            });
+        </script>
+    </head>
+</html>
